@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+
 const images = [
   {
     src: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -34,10 +34,13 @@ const images = [
         img.src = image.src;
         img.alt = image.alt;
 
+        img.style.width = '360px';
+        img.style.height = '300px';
+      
         li.appendChild(img);
         gallery.appendChild(li);
     });
-});
+
 
 gallery.style.display = 'flex';
 gallery.style.listStyle = 'none';
@@ -47,7 +50,6 @@ gallery.style.gap = '48px 24px';
 gallery.style.padding = '100px 0';
 gallery.style.justifyContent = 'center';
 
-img.style.width = '360px';
-img.style.height = '300px';
+
 
 
