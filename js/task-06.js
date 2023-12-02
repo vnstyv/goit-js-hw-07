@@ -26,6 +26,7 @@ const destroyBoxes = () => {
 }
 
 createButton.addEventListener('click', () => {
+  destroyBoxes();
   let boxesToAdd = createBoxes(input.value);
   boxes.append(...boxesToAdd);
 })
